@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample HTML Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+      header {
+        background-color: #ffffff;
+        box-shadow: 0px -2px 30px 0px #cedbdc80;
+        padding: 20px 23px;
+        display: flex;
+        align-items: center;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .main-container {
+        background-image: url("https://cvstaticfiles.s3.ap-south-1.amazonaws.com/website/lines.svg");
+        background-color: #e9ecef;
+        height: calc(100vh - 58px);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .white-contaniner {
+        background-color: #ffffff;
+        height: 80%;
+        width: 85%;
+        border: Mixed solid #8c8c8c54;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px 0px #0000002b;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        padding: 2.5rem;
+        overflow-y: auto;
+      }
+
+      .background-image-pos {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 1;
+      }
+
+      .blue-txt {
+        font-family: "Montserrat", sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        color: #20639b;
+      }
+
+      .black-txt {
+        font-family: "Lato", sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        color: #000000;
+      }
+
+      .black-small-txt {
+        font-family: "Lato", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #000000;
+      }
+
+      .grey-txt {
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        color: #3a3c40;
+      }
+
+      .grey-txt-2 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #3a3c40;
+      }
+
+      .blue-underline {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        color: #20639b;
+        text-decoration: underline;
+      }
+      @media only screen and (max-width: 600px) {
+       .first-div{
+        order: 1;
+       }
+       .second-div{
+        order: 0;
+       }
+       .white-contaniner{
+          flex-direction: column;
+          padding: 1rem;
+          height: 90%;
+       }
+       
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://cvstaticfiles.s3.ap-south-1.amazonaws.com/website/hire3xlogo.svg" alt="">
+    </header>
+    <div class="main-container">
+      <div class="white-contaniner">
+        <div class="background-image-pos">
+          <img width="100%" src="https://cvstaticfiles.s3.ap-south-1.amazonaws.com/website/RestricatedBackgroundImage.svg" alt="" />
+        </div>
+        <div class="first-div" style="z-index: 2;">
+          <div class="blue-txt">We’re sorry.</div>
+          <div class="black-txt" style="margin-top: 20px;">Hire3x is not available in your country</div>
+          <div class="black-small-txt" style="margin-top: 50px;">Here are a few things you can try:</div>
+          <div class="grey-txt" style="margin-top: 20px;">Visit our website:</div>
+          <div class="grey-txt-2" style="margin-top: 7px;">
+            Learn more about us by visiting the <a href="http://www.hire3x.com" class="blue-underline" target="_blank">Hire3x</a> website.
+          </div>
+          <div class="grey-txt" style="margin-top: 19px;">Contact Us:</div>
+          <div class="grey-txt-2" style="margin-top: 7px;">
+            If you believe there's an issue, feel free to <a href="https://www.hire3x.com/contact" class="blue-underline" target="_blank">Contact Us</a> for
+            assistance.
+          </div>
+        </div>
+        <div class="second-div" style="z-index:1">
+          <img width="100%"  src="https://cvstaticfiles.s3.ap-south-1.amazonaws.com/website/RestrictedRightImage.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
